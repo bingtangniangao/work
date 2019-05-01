@@ -1,0 +1,181 @@
+/* @import url(./b.css)
+body{
+  background-color:grey
+}
+h2{
+  text-align:center;color:red
+} */
+body{
+  background:#EFEFEF;
+  color:black;
+  margin:0;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+*{
+  margin:0;padding:0;
+}
+hr{
+  height:0;
+  border:none;
+  border-top:1px solid #dedede;
+}
+.clearfix::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.topNavBar{
+  /* padding-top:20px;
+  padding-bottom: 20px;
+  padding-left:16px;
+  padding-right:16px; */
+  /* padding: 20px 0px; */
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+
+}
+.topNavBar_inner{
+  padding: 20px 16px;
+}
+.topNavBar  nav{
+  padding-top:7px;
+  padding-bottom:0px;
+}
+.topNavBar nav>ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+  border:1px solid red;
+}
+.topNavBar nav>ul>li{
+  float: left;
+  border:1px solid green;
+  margin-left:17px;
+  margin-right:17px;
+}
+.topNavBar nav>ul>li>a{
+  font-size:12px;
+  color:#B7B7B7;
+  /* text-decoration: none; */
+  font-weight:bold;
+  border-top: 3px solid transparent;/*为了居中对齐*/
+  border-bottom:3px solid transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  display:block;
+}
+.topNavBar nav>ul>li>a:hover{
+  border-bottom:3px solid #e06567
+}
+.topNavBar .logo{
+  font-size:24px;
+  font-family:"Arial Black";
+  padding-top:3px;
+  padding-bottom: 4px;
+}
+    .topNavBar .logo .rs{
+      margin-right:4px;
+      color:#E6686A
+    }
+    .topNavBar .logo .card{
+      color:#9a9da2;
+      
+    }
+    .banner{
+      height:515px;
+      background-image:url(./img/rs-cover.jpg);
+      border:1px solid red;
+      background-position:center center;
+      background-size:cover;
+    }
+    .banner .mask{
+      height:515px;
+      background-color:rgba(0,0,0,0.8);
+
+    }
+    .userCard{
+      background-color:#ffffff;
+      border:1px solid aqua;
+      max-width: 940px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .userCard .welcome{
+      background: RGB(230, 104, 107);
+      color:white;
+      display: inline-block;
+      padding: 4px 16px;
+      line-height: 22px;/*也可以不加因为已经居中了*/
+      position:relative;
+      margin-bottom:10px;
+    }
+    .userCard .welcome .triangle{
+      display:block;
+      border:20px solid transparent;
+      width:0px;
+      height:0px; 
+      border-left-color:#E6686A;
+      border-top-width:0px;
+      position:absolute;
+      left:4px;
+      top:100%;
+    }
+    .userCard .picture{
+      float:left;
+    }
+    .userCard .text{
+      float:left;
+      margin-left:65px;
+      width:470px;
+    }
+    .userCard .text h1{
+      margin-top:18px;
+    }
+    .userCard .text hr{
+      margin:20px 0;
+    }
+    .userCard .pictureAndText{
+      padding:50px;
+    }
+    .userCard dl dt,
+    .userCard dl dd{
+      float:left;
+      padding:5px 0px
+    }
+    .userCard dl dt{
+      width:30%;
+      font-weight:bold;
+    }
+    .userCard dl dd{
+      width:70%;
+      color:#9da0a7;
+    }
+    .userCard>footer.media{
+      background:#E6686A;
+      text-align:center;
+    }
+    .user>footer.media>a{
+      border:1px solid black;
+      display:inline-block;
+      width:40px;
+      padding:5px 0;
+      line-height:40px;
+      border-radius:50%;
+
+    }
+    .use>footer.media>a:hover{
+      background:#Cf5d5f;
+      margin: 16px ;
+    }
+    .userCard svg{
+      width:30px;
+      height:30px;
+      fill:white;
+      margin:0 16px;
+      vertical-align:top;
+    }
