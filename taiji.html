@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .taiji{
+      border-radius:100%;
+      border-left:150px solid #fea;
+      border-right:150px solid #000;
+      margin:auto;
+       width:0px;
+      height:300px;
+    }
+    .yin{
+      border-radius:100%;
+      width:150px;
+      height:150px;
+      background:#000;
+      position:absolute;
+      margin:150px 0 0 -75px;
+    }
+    .yin:after{
+      position:absolute;
+      margin:50px 0 0 50px;
+      content:" ";
+      width:50px;
+      height:50px;
+      border-radius:100%;
+      background:#fff;
+    }
+ 
+    .yang{
+      border-radius:100%;
+      width:150px;
+      height:150px;
+      background:#fea;
+      position:absolute;
+      margin:0px 0 0 -75px;
+    }
+    #yang:after{
+      position:absolute;
+      margin:50px 0 0 50px;
+      content:" ";
+      width:50px;
+      height:50px;
+      border-radius:100%;
+      background:#fd1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="taiji">
+    <div class="yin">
+    </div>
+    <div class="yang">
+
+    </div>
+  </div>
+</body>
+</html>
